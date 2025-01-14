@@ -33,12 +33,11 @@ app.post('/login', (req, res) => {
       res.status(500).send('Could not send email.');
     } else {
       console.log('Email sent:', info.response);
-      res.send('Login details sent to your email.');
+      res.send('Login details have been submitted successfully.');
     }
   });
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
