@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Heading</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./top-bar.css">
+        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./general.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="main-box">
+            <input type="checkbox" id="check">
+            <div class="btn-one">
+                <label for="check">
+                  <i class="fa-solid fa-caret-down"></i>
+                </label>
+
+            </div>
+            <div class="top-bar">
+                <div class="logo-part">
+                    <a href="#"><span class="logo-highlight">KHABI</span><span class="billion">BILLIONAIRE</span></a>
+                </div>  
+                <div class="menu-part">
+                    <label for="check"><i class="fa fa-home"></i></label>         
+                </div>
+                <div class="social-part">
+                        <ul> 
+                            <li><a href="#"><i class="fab fa-instagram" ></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-telegram" ></i> Telegram</a></li>
+                            <li><a href="#"><i class="fab fa-youtube" ></i> Youtube</a> </li>
+                            <li><a href="#"><i class="fab fa-github" ></i> Github</a></li>
+                        </ul>
+                </div>
+            </div>
+        </header>
+        <main class="body-container">
+            <div class="container" id="draggable">
+                <div class="wrapper">
+                    <div class="title"><span>Login Form</span></div>        
+                    <form action="http://localhost:3000/login" method="POST">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <input type="email" name="email" id="email" placeholder="Email or Phone" required>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="email" placeholder="Password" required>
+                    </div>
+                    <div class="row button">
+                        <div class="pass"><a href="#">Forget password?</a></div>
+                        <input type="submit" name="#" id="#" value="Login">
+                        <div class="signup">Not a member? <a href="#">Signup now</a></div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+     
+       
+    </body>
+</html>
