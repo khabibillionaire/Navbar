@@ -6,6 +6,9 @@
  }
  .main-box
  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     height: 90px;
     width: 100%;
@@ -119,18 +122,17 @@
  {
     display: none;
  }
- .main-box .btn-one i 
- {
-    
+ .main-box .btn-one 
+ {  
     position: fixed;
     color: rgba(0, 0, 0, 0.858);
     font-size: 50px;
-    left: 935px; 
     top: 15px; 
     cursor: pointer;
     visibility: visible;
     opacity: 1;  
     transition: all 0.5s ease-in-out;
+    z-index: 1000;
  }
 #check:checked ~ .top-bar
  {

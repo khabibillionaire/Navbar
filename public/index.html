@@ -6,9 +6,12 @@
         <title>KHABI</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="tab.css">
         <link rel="stylesheet" href="./top-bar.css">
         <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./scrollbar.css">
         <link rel="stylesheet" href="./general.css">
+        <link rel="stylesheet" href="./search-flex.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
@@ -37,6 +40,75 @@
                 </div>
             </div>
         </header>
+        <div class="container-box">
+            <div class="main-title">KHABIBILLIONIARE</div>
+         <div class="content">
+             <input type="radio" name="indicator" checked id="home">
+             <input type="radio" name="indicator" id="blog">
+             <input type="radio" name="indicator" id="help">
+             <input type="radio" name="indicator" id="code">
+             <input type="radio" name="indicator" id="user">
+             <div class="list">
+                     <label for="home" class="home" >
+                         <i class="fas fa-home"></i>
+                         <span class="topic">Home</span>
+                     </label>
+                     <label for="blog" class="blog" >
+                         <i class="fas fa-blog"></i>
+                         <span class="topic">Blog</span>
+                     </label>
+                     <label for="help" class="help" >
+                         <i class="fas fa-envelope"></i>
+                         <span class="topic">Help</span>
+                     </label>
+                     <label for="code" class="code" >
+                         <i class="fas fa-code"></i>
+                         <span class="topic">Code</span>
+                     </label>
+                     <label for="user" class="user" >
+                         <i class="fas fa-user"></i>
+                         <span class="topic">User</span>
+                     </label>
+                     <div class="indicator"></div>
+                     
+              </div> 
+              <div class="text-content">
+                 <div class="home text">
+                             <div class="title">Home: The Heart of Life</div>
+                             <p>Home is more than just a physical structure made of bricks and mortar; it is a sanctuary where comfort, love, and a sense of belonging thrive. It is a place that provides refuge from the chaos of the outside world, offering a space where we can truly be ourselves. Home is not merely a location; it is a feeling, a collection of memories, and a cornerstone of our lives.</p>
+                 </div> 
+                 <div class="blog text">
+                     
+                             <div class="title">Blog: A Platform for Expression</div>
+                             <p>A blog is a space for individuals to share their ideas and expertise with a global audience. It allows for creative expression and fosters meaningful connections through discussions. Blogs also promote learning and growth by exchanging knowledge. They are valuable tools for personal branding and community building in the digital age.</p>
+                     
+                 </div>
+                 <div class="help text">
+                             <div class="title">Help: Essential Support</div>
+                             <p>Help provides assistance in times of need, offering guidance and comfort. It comes from various sources, easing challenges and promoting well-being. Seeking and offering help strengthens connections and builds community.</p>
+                     
+                 </div>
+                 <div class="code text">
+                             <div class="title">Code: The Language of Technology</div>
+                             <p>Code is the foundation of all software and digital technology. It enables computers to perform tasks by translating human instructions into machine-readable commands. Writing code allows for the creation of applications, websites, and systems. It empowers developers to solve problems and innovate in countless fields. Ultimately, code is the tool that drives the digital world forward.</p>
+                 
+                 </div>
+                 <div class="user text">
+                             <div class="title">User: The Focus of Technology</div>
+                             <p>A user interacts with systems and services, shaping their design and functionality. Understanding users is key to creating effective solutions. Their feedback drives improvements and influences product success.</p>
+                     
+                 </div>
+             </div>
+                     
+         </div>
+   </div>
+   <div class="box-search">
+    <input type="checkbox" id="checkforsearch" checked>
+    <div class="box">
+        <input type="text" class="input" placeholder="Type here...">
+        <label for="checkforsearch"> <i class="fas fa-search"></i></label>
+    </div>
+</div>
         <main class="body-container">
             <div class="container" id="draggable">
                 <div class="wrapper">
@@ -59,6 +131,54 @@
                 </div>
             </div>
         </main>
+
+        <div class="main-scrollbar-container">
+            <input type="checkbox" name="indicator" id="image1" class="radio-input">
+            <input type="checkbox" name="indicator" id="image2" class="radio-input">
+            <input type="checkbox" name="indicator" id="image3" class="radio-input">
+            <input type="checkbox" name="indicator" id="image4" class="radio-input">
+            <input type="checkbox" name="indicator" id="image5" class="radio-input">
+            <input type="checkbox" name="indicator" id="image6" class="radio-input">
+            <label for="image1">
+                <div class="object-container image1-container">
+                    <div class="img-container">Hello1</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            <label for="image2">
+                <div class="object-container image2-container">
+                    <div class="img-container">Hello2</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            <label for="image3">
+                <div class="object-container image3-container">
+                    <div class="img-container">Hello3</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            <label for="image4">
+                <div class="object-container image4-container">
+                    <div class="img-container">Hello4</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            <label for="image5">
+                <div class="object-container image5-container">
+                    <div class="img-container">Hello5</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            <label for="image6">
+                <div class="object-container image6-container">
+                    <div class="img-container">Hello6</div>
+                    <div class="discrip-container"></div>
+                </div>
+            </label>
+            
+            
+
+        </div>
      
        
     </body>

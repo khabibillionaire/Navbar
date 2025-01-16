@@ -1,0 +1,127 @@
+.container-box
+{
+    margin-top: 50px;
+    max-width: 1000px;
+    max-height: 600px;
+    min-width: 600px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    line-height: 40px;
+    resize: horizontal;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.main-title
+{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.list
+{
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+    width: 120px;
+
+}
+.list label
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    width: 120px;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 12;
+    color: black;
+}
+.content
+{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+    display: flex;
+    height: 350px;
+}
+.text-content
+{
+    font-size: larger;
+    padding: 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+.title
+{
+    font-weight: 600;
+    font-size: 24px;
+}
+.text
+{
+    display: none;
+}
+.indicator
+{
+    display: flex;
+    top: 0;
+    left: -1px;
+    position: absolute;
+    height: 70px;
+    width: 120px;
+    background-color: black;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    
+}
+#home:checked ~  .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#user:checked ~ .text-content .user
+{
+    display: block;
+}
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#user:checked ~ .list .user
+{
+    color: #fff;
+}
+#home:checked ~ .list .indicator
+{
+    top: 0;
+}
+#blog:checked ~ .list .indicator
+{
+    top: 70px;
+}
+#help:checked ~ .list .indicator
+{
+    top: 140px;
+}
+#code:checked ~ .list .indicator
+{
+    top: 210px;
+}
+#user:checked ~ .list .indicator
+{
+    top: 280px;
+}
+.container-box input[type="radio"]
+{
+    display: none;
+}
+
+
