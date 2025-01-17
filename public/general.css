@@ -12,3 +12,6 @@ body
     align-items: center;
     flex-direction: column;
 }
+body.dark-mode {
+    background: rgba(0, 0, 0, 0.812);
+}

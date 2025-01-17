@@ -1,0 +1,35 @@
+
+.mode-main
+{
+    margin-top: 200px;
+}
+.mode-box
+{
+    background-color: lightgray;
+    height: 55px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    transition: justify-content 5s ease-in background-color 0.3s linear;
+}
+.mode-circle
+{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+}
+#mode
+{
+    display: none;
+}
+#mode:checked ~ label .mode-box
+{
+   justify-content: end;
+   background-color: black:
+}
+

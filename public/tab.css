@@ -15,6 +15,7 @@
     resize: horizontal;
     overflow: hidden;
     cursor: grab;
+    background-color: white;
 }
 
 .main-title
