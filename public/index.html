@@ -12,19 +12,10 @@
         <link rel="stylesheet" href="./scrollbar.css">
         <link rel="stylesheet" href="./general.css">
         <link rel="stylesheet" href="./search-flex.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="mode.css">
         <link rel="stylesheet" href="./scrollbox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-        <div class="mode-main">
-            <input type="checkbox" id="mode">
-            <label for="mode">
-                <div class="mode-box">
-                    <div class="mode-circle"></div>
-                </div>
-        </label>
-        </div>
         <header class="main-box">
             <input type="checkbox" id="check">
             <div class="btn-one">
@@ -113,7 +104,7 @@
          </div>
    </div>
    <div class="box-search">
-    <input type="checkbox" id="checkforsearch" checked>
+    <input type="checkbox" id="checkforsearch">
     <div class="box">
         <input type="text" class="input" placeholder="Type here...">
         <label for="checkforsearch"> <i class="fas fa-search"></i></label>
@@ -187,21 +178,77 @@
             </label>
         </div>
 
-  
 
-        <script>
-            // Select the checkbox and body
-            const modeCheckbox = document.getElementById('mode');
-            const body = document.body;
-    
-            // Add event listener to toggle dark mode on checkbox change
-            modeCheckbox.addEventListener('change', () => {
-                if (modeCheckbox.checked) {
-                    body.classList.add('dark-mode'); // Add dark mode class
-                } else {
-                    body.classList.remove('dark-mode'); // Remove dark mode class
-                }
-            });
-        </script>
+    <body>
+        <div class="main-container">
+            <input type="checkbox" id="head-radio1">
+            <input type="checkbox" id="head-radio2">
+            <input type="checkbox" id="head-radio3">
+            <input type="checkbox" id="head-radio4">
+            <input type="checkbox" id="head-radio5">
+            <input type="checkbox" id="head-radio6">
+            <div class="container-heading">
+                <label for="head-radio1">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info1">
+                    
+                </p>    
+            </div>
+            <div class="container-heading">
+                <label for="head-radio2">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info2">
+                    
+                </p>    
+            </div>
+            <div class="container-heading">
+                <label for="head-radio3">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info3">
+                    
+                </p>    
+            </div>
+            <div class="container-heading">
+                <label for="head-radio4">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info4">
+                    
+                </p>    
+            </div>
+            <div class="container-heading">
+                <label for="head-radio5">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info5">
+                    
+                </p>    
+            </div>
+            <div class="container-heading">
+                <label for="head-radio6">
+                   <div class="head">
+                    <i class="fa-thin fa-greater-than"></i>
+                   </div> 
+                </label>
+                <p class="info info6">
+                    
+                </p>    
+            </div>
+        </div>
+     
+       
     </body>
 </html>
