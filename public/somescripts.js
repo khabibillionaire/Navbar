@@ -124,7 +124,7 @@ function display(){
     const name = todoObject.name;
     const date = todoObject.date;
     const html = `
-    <div class="list">
+    <div class="list-todolist">
     <p class="todo-name">${i+1}. ${name}</p>
     <p class="todo-date-js">${date}</p>
     <button onclick="removeElement(${i});"><i class="fa-solid fa-trash-can"></i></button>
