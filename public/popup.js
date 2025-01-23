@@ -2,7 +2,7 @@
 
 const joinBtn = document.querySelector('.join-btn');
 const okBtn = document.querySelector('.ok-btn');
-const pageContent = document.querySelector('.page-content')
+const pageContent = document.querySelector('.PopUp');
 
 joinBtn.addEventListener('click', () => {
     addPopUp();
@@ -29,12 +29,12 @@ document.addEventListener('scroll', () => {
 
 function addPopUp() {
    document.querySelector('.popup-page').classList.add("popup-oversize");
-   pageContent.classList.add("dim-page");
+   pageContent.classList.add("forPopUp");
    joinBtn.classList.add("join-btn-part");
 }
 function removePopUp() {
     document.querySelector('.popup-page').classList.remove("popup-oversize");
     joinBtn.classList.remove("join-btn-part");
-    pageContent.classList.remove("dim-page");
+    pageContent.classList.remove("forPopUp");
  }
 

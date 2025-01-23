@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
 }
 .popup-page
 {
@@ -65,6 +66,7 @@
     color: white;
     font-weight: 600;
     border-radius: 10px;
+    z-index: 3000;
 }
 .popup-oversize
 {
@@ -76,9 +78,13 @@
 {
     visibility: hidden;
 }
-.dim-page
+
+.forPopUp
 {
-    opacity: 0.5;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    position: absolute;
+    height: 200000px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 2000;
 }
