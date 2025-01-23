@@ -1,16 +1,17 @@
 .main-container
 {
-  height: 600px;
-  width: 800px;
+  width: 500px;
   border: 10px;
 }
 .container-heading
 {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   max-height: 400px;
+  width: 100%;
   border-radius: 10px;
   margin: 1px; 
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  
 }
 .head
 {
@@ -19,6 +20,7 @@
   height: 70px;
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  
 }
 .info
 {
@@ -28,12 +30,12 @@
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-top: none;
-  transition: all 0.5s ease;
   margin-top: -9px;
 }
 .main-container input
 {
   display: none;
+  
 }
 #head-radio1:checked ~ .container-heading .info1,
 #head-radio2:checked ~ .container-heading .info2,
@@ -42,7 +44,6 @@
 #head-radio5:checked ~ .container-heading .info5,
 #head-radio6:checked ~ .container-heading .info6
 {
-  transition: all 0.5s ease;
   display: block;
 }
 
